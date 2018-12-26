@@ -1,19 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "28.0.2"
-
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "de.danielweisser.android.ldapsync"
-        minSdkVersion 11
-        targetSdkVersion 22
+        minSdkVersion 21
+        targetSdkVersion 28
         compileOptions {
             sourceCompatibility JavaVersion.VERSION_1_6
             targetCompatibility JavaVersion.VERSION_1_6
         }
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -25,10 +23,12 @@ android {
             includeAndroidResources = true
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    implementation files('libs/unboundid-ldapsdk-me.jar')
+    implementation files('libs/unboundid-ldapsdk-me_new.jar')
     implementation 'junit:junit:4.12'
-    testImplementation "org.robolectric:robolectric:3.8"
+    testImplementation 'org.robolectric:robolectric:3.8'
 }
