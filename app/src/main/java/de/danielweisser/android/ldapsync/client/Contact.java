@@ -16,15 +16,14 @@
 
 package de.danielweisser.android.ldapsync.client;
 
-import java.io.ByteArrayOutputStream;
-
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.provider.ContactsContract;
 import android.util.Log;
 
 import com.unboundid.ldap.sdk.ReadOnlyEntry;
+
+import java.io.ByteArrayOutputStream;
 
 /**
  * Represents a LDAPSyncAdapter contact.

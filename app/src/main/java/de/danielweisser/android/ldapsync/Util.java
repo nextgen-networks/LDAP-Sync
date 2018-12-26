@@ -1,12 +1,12 @@
 package de.danielweisser.android.ldapsync;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.io.Writer;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 
 public class Util {
 	public static SharedPreferences getPrefs(Context ctx) {

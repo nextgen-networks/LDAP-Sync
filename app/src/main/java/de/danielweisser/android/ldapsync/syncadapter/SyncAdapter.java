@@ -16,10 +16,6 @@
 
 package de.danielweisser.android.ldapsync.syncadapter;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
@@ -31,6 +27,11 @@ import android.content.SyncResult;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 import de.danielweisser.android.ldapsync.Constants;
 import de.danielweisser.android.ldapsync.client.Contact;
 import de.danielweisser.android.ldapsync.client.LDAPServerInstance;

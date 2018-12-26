@@ -16,22 +16,22 @@
 
 package de.danielweisser.android.ldapsync.platform;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-
 import android.content.ContentProviderOperation;
-import android.content.ContentValues;
 import android.content.ContentProviderOperation.Builder;
+import android.content.ContentValues;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.CommonDataKinds.Photo;
 import android.provider.ContactsContract.CommonDataKinds.StructuredName;
 import android.provider.ContactsContract.CommonDataKinds.StructuredPostal;
+import android.provider.ContactsContract.Data;
 import android.text.TextUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import de.danielweisser.android.ldapsync.client.Address;
 import de.danielweisser.android.ldapsync.client.Contact;
 import de.danielweisser.android.ldapsync.syncadapter.Logger;

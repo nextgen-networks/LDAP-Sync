@@ -17,11 +17,6 @@
 
 package de.danielweisser.android.ldapsync.client;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -39,10 +34,13 @@ import com.unboundid.ldap.sdk.SearchResult;
 import com.unboundid.ldap.sdk.SearchResultEntry;
 import com.unboundid.ldap.sdk.SearchScope;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 import de.danielweisser.android.ldapsync.R;
 import de.danielweisser.android.ldapsync.activity.SyncErrorActivity;
 import de.danielweisser.android.ldapsync.authenticator.LDAPAuthenticatorActivity;
-import de.danielweisser.android.ldapsync.syncadapter.SyncService;
 
 /**
  * Provides utility methods for communicating with the LDAP server.

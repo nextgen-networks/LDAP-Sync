@@ -16,6 +16,9 @@
 
 package de.danielweisser.android.ldapsync.syncadapter;
 
+import android.os.Environment;
+import android.util.Log;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,8 +27,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import android.os.Environment;
-import android.util.Log;
 import de.danielweisser.android.ldapsync.Constants;
 
 /**

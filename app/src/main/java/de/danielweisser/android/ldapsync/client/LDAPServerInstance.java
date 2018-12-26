@@ -17,10 +17,6 @@
 
 package de.danielweisser.android.ldapsync.client;
 
-import java.io.Serializable;
-
-import javax.net.SocketFactory;
-
 import android.util.Log;
 
 import com.unboundid.ldap.sdk.ExtendedResult;
@@ -31,6 +27,10 @@ import com.unboundid.ldap.sdk.ResultCode;
 import com.unboundid.ldap.sdk.extensions.StartTLSExtendedRequest;
 import com.unboundid.util.ssl.SSLUtil;
 import com.unboundid.util.ssl.TrustAllTrustManager;
+
+import java.io.Serializable;
+
+import javax.net.SocketFactory;
 
 /**
  * Encapsulates a LDAP directory server instance and provides methods to access the server. This is based on code from the UnboundID LDAP Client.

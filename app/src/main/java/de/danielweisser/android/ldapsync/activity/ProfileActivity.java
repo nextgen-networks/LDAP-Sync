@@ -1,30 +1,6 @@
 package de.danielweisser.android.ldapsync.activity;
 
-import de.danielweisser.android.ldapsync.R;
-import de.danielweisser.android.ldapsync.Constants;
-import de.danielweisser.android.ldapsync.client.Address;
-import de.danielweisser.android.ldapsync.client.Contact;
 //import de.danielweisser.android.ldapsync.client.Organization;
-import de.danielweisser.android.ldapsync.platform.ContactManager;
-import de.danielweisser.android.ldapsync.syncadapter.Logger;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.provider.ContactsContract.CommonDataKinds;
-import android.provider.ContactsContract.Intents.Insert;
-import android.text.util.Linkify;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.TextView;
 /*
 public class ProfileActivity extends Activity implements OnClickListener {
 
