@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        LDAPsync {
+            keyAlias 'LDAPsync-cert'
+            keyPassword 'ldapsync@PurrCat6'
+            storeFile file('C:/Users/lenovo/.android/keystore.jks')
+            storePassword 'keystore@PurrCat6'
+        }
+    }
     compileSdkVersion 28
     buildToolsVersion "28.0.3"
     defaultConfig {
@@ -8,9 +16,10 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         compileOptions {
-            sourceCompatibility JavaVersion.VERSION_1_6
-            targetCompatibility JavaVersion.VERSION_1_6
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
+        signingConfig signingConfigs.LDAPsync
     }
     buildTypes {
         release {
@@ -25,10 +34,14 @@ android {
     }
     productFlavors {
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation files('libs/unboundid-ldapsdk-me.jar')
+    implementation files('libs/unboundid-ldapsdk.jar')
     implementation 'junit:junit:4.12'
     testImplementation 'org.robolectric:robolectric:3.8'
 }
